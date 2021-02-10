@@ -1,0 +1,31 @@
+.card {
+  padding-left: 0;
+  list-style: none;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  li div {
+    padding: 20px;
+    border: grey solid 1px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    h4 {
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+  }
+}

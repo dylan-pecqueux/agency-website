@@ -1,0 +1,89 @@
+@import "components/Navbar";
+@import "pages/Home";
+@import "pages/About";
+@import "pages/StudyCase";
+@import "pages/Works";
+@import "components/List";
+@import "components/Card";
+
+$secondary: rgb(177, 2, 2);
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light {
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+  a {
+    color: black;
+    &:hover {
+      color: rgb(91, 92, 196);
+    }
+  }
+  header nav {
+    background-color: rgb(91, 92, 196);
+    a {
+      color: white;
+      &:hover {
+        color: rgb(181, 196, 212);
+      }
+    }
+  }
+  .btn-work {
+    background-color: rgb(91, 92, 196);
+    color: white;
+    &:hover {
+      background-color: rgb(181, 196, 212);
+      color: rgb(91, 92, 196);
+    }
+  }
+  .btn-nav {
+    background-color: white;
+    color: rgb(37, 37, 37);
+    &:hover {
+      background-color: rgb(181, 196, 212);
+      color: white;
+    }
+  }
+}
+
+.dark {
+  color: white;
+  background-color: rgb(37, 37, 37);
+  transition: 0.5s;
+  a {
+    color: white;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  header nav {
+    background-color: rgb(160, 34, 34);
+    a:hover {
+      color: black;
+    }
+  }
+  .btn-work {
+    background-color: rgb(160, 34, 34);
+    color: white;
+    &:hover {
+      background-color: white;
+      color: rgb(160, 34, 34);
+    }
+  }
+  .btn-nav {
+    background-color: white;
+    color: rgb(37, 37, 37);
+    &:hover {
+      background-color: rgb(37, 37, 37);
+      color: white;
+    }
+  }
+}

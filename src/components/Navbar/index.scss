@@ -1,0 +1,30 @@
+#root {
+  header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      .nav-theme {
+        margin-right: 20px;
+      }
+      .nav-link {
+        margin-left: 20px;
+        a {
+          margin-right: 20px;
+        }
+      }
+      .btn-nav {
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        padding: 8px;
+        width: 200px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.study-case {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  h1 {
+    text-align: center;
+  }
+  p {
+    margin-top: 40px;
+  }
+}
