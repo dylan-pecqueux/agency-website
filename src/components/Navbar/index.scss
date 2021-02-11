@@ -4,7 +4,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 50px;
+      height: 60px;
       .nav-theme {
         margin-right: 20px;
       }
@@ -14,17 +14,68 @@
           margin-right: 20px;
         }
       }
-      .btn-nav {
+      .btn-theme {
+        position: relative;
+        width: 100px;
+        height: 40px;
+        background-color: rgb(37, 37, 37);
         border: none;
-        border-radius: 5px;
+        border-radius: 30px;
+        padding: 0;
         cursor: pointer;
-        font-size: 15px;
-        padding: 8px;
-        width: 200px;
         &:focus {
           outline: none;
+        }
+        .lune {
+          position: absolute;
+          top: 6px;
+          left: 8px;
+          width: 33px;
+        }
+        .sun {
+          position: absolute;
+          top: 1px;
+          right: 0;
+          width: 58px;
+        }
+        div {
+          z-index: 1;
+          width: 50px;
+          background-color: white;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
         }
       }
     }
   }
+}
+
+.btn-left {
+  transition: 1s;
+  background-color: rgb(181, 196, 212) !important;
+}
+.btn-right {
+  padding-left: 50px !important;
+  transition: 1s;
+}
+.btn-left > .lune {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.btn-right > .lune {
+  opacity: 1;
+  transition-delay: 0.75s;
+  transition-duration: 1s;
+}
+.btn-right > .sun {
+  opacity: 0;
+  transition: 0.5s;
+}
+.btn-left > .sun {
+  opacity: 1;
+  transition-delay: 0.75s;
+  transition-duration: 1s;
 }
