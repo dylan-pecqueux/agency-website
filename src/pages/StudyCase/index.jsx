@@ -18,7 +18,8 @@ const StudyCase = () => {
       {!currentStudyCase && <h3>Aucun cas d'étude trouvé</h3>}
       {currentStudyCase && (
         <>
-          <h1>{currentStudyCase.title}</h1>
+          <h1>{currentStudyCase.client}</h1>
+          <h2>{currentStudyCase.title}</h2>
           <p>{currentStudyCase.content}</p>
         </>
       )}
